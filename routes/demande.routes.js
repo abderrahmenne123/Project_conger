@@ -6,4 +6,5 @@ const router = express.Router();
 router.post("/addemande", DemandeController.ademande);
 router.get("/getdemande", DemandeController.getAll);
 router.delete("/:id", DemandeController.deleteDemande);
+router.get("/:salarierid", DemandeController.getDemandeBySalarier);
 module.exports = router; 
